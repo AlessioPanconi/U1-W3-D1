@@ -7,13 +7,10 @@ function concatArray(arr1, arr2) {
   app1 = arr1.slice(0, 2);
   app2 = arr2.slice(-3);
   app3 = app1.concat(app2);
-  app3 = app3.map((element) => element.toUpperCase());
-  console.log(app3);
+  console.log(app3.toUpperCase());
 }
-const a = ["a", "b", "c", "d", "f"];
-const b = ["g", "h", "i", "j"];
 
-concatArray(a, b);
+concatArray("pippo", "pluto");
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
