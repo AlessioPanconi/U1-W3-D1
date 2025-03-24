@@ -196,9 +196,9 @@ const movies = [
 
 function oldest(pippo) {
   let year = 2025;
-  movies.forEach((pippo) => {
-    if (parseInt(pippo.year) < year) {
-      year = pippo.year;
+  pippo.forEach((pippo) => {
+    if (pippo.Year < year) {
+      year = pippo.Year;
     }
   });
   return year;
