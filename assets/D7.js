@@ -248,11 +248,16 @@ console.log(sommaAnni(movies));
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
-function trovami(a) {
-  const findMe = a.find((id) => id.imdbID === "tt0848228");
+function trovami(a, imdbID) {
+  const findMe = a.find((id) => id.imdbID === imdbID);
   return findMe;
 }
-console.log(trovami(movies));
+console.log(trovami(movies, "tt2395427"));
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+function trovaAnno(nn, year) {
+  const indice = nn.findIndex((anno) => anno.Year === year);
+  return indice;
+}
+console.log(trovaAnno(movies, "2018"));
